@@ -1,0 +1,9 @@
+project: savantenvs/kore
+target: config
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/config/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_config @@
+    afl: true
+    timeout: 10

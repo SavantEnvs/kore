@@ -1,0 +1,5 @@
+HEAD /page HTTP/1.1
+Host: x
+
+GET /sub/../a.txt HTTP/1.1
+

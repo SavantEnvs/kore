@@ -1,0 +1,4 @@
+GET /api/x?id=abc123&n=-42&port=8080 HTTP/1.1
+Host: x
+Cookie: a=1; sid=s3ss10n
+

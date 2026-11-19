@@ -1,0 +1,9 @@
+project: savantenvs/kore
+target: filemap
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/filemap/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_filemap
+    libfuzzer: true
+    timeout: 10

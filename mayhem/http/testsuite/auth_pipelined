@@ -1,0 +1,8 @@
+GET /private HTTP/1.1
+Host: x
+Cookie: session=letmein
+
+GET /token HTTP/1.1
+X-Token: letmein
+Connection: keep-alive
+

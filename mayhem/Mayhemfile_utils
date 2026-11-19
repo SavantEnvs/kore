@@ -1,0 +1,9 @@
+project: savantenvs/kore
+target: utils
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/utils/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_utils
+    libfuzzer: true
+    timeout: 10

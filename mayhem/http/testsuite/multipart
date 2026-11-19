@@ -1,0 +1,10 @@
+POST /api/up HTTP/1.1
+Host: x
+Content-Type: multipart/form-data; boundary=XyZ
+Content-Length: 88
+
+--XyZ
+Content-Disposition: form-data; name="file"; filename="a.txt"
+
+hello
+--XyZ--
